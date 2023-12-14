@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+
+* {
+  font-family: sans-serif;
+}
+p {
+  text-align: center;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.playful {
+  font-family: "Playfair Display", serif;
+}
+.logo {
+  font-weight: 700;
+}
+.nav-items {
+  font-size: 11px;
+  margin-right: 10px;
+}
+.nav-items:hover {
+  text-decoration: underline;
+}
+.heading {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  max-width: 300px;
+}
+.content {
+  max-width: 250px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.info {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 120px;
+}
+.img {
+  width: 150px;
+}
+.button {
+  border: none;
+  background-color: rgb(55, 19, 45);
+  color: white;
+  padding: 7px 10px;
+  font-size: 11px;
+}
+.button-head {
+  margin-top: 20px;
+}
+.img-top {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+}
+.img-container {
+  position: relative;
+}
+.header-img {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.experience {
+  margin-top: 200px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.button-exp {
+  margin-top: 20px;
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+.hero {
+  justify-content: space-around;
+}
+.box-shadow {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.button-hero {
+  margin-top: 20px;
+}
+.service {
+  margin-top: 100px;
+  position: relative;
+}
+.grey {
+  position: absolute;
+  top: -18px;
+  font-size: 20px;
+  color: rgb(123, 123, 123);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  width: 200px;
+  box-shadow: 2px 2px 2px rgba(175, 175, 175, 0.5);
+  margin-bottom: 10px;
+  align-self: center;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+.card .img {
+  width: 100%;
+}
+.card-head {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.card-content {
+  font-size: 11px;
+  max-width: 150px;
+  color: rgb(109, 109, 109);
+  margin-top: 2px;
+}
+.button-card {
+  margin-top: 10px;
+}
+.footer {
+  display: flex;
+  background-color: rgb(55, 19, 45);
+  width: 100%;
+  justify-content: space-around;
+  height: 150px;
+  margin-top: 100px;
+}
+.footer * {
+  color: white;
+}
+.footer-head {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer-content {
+  margin: 2px;
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+  }
+  .experience {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero div {
+    text-align: center;
+  }
+  .experience .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience,
+  div {
+    text-align: center;
+  }
+  .info .left {
+    margin-right: 40px;
+  }
+}
